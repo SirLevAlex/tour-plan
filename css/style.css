@@ -396,6 +396,8 @@ template {
   font-size: 12px;
   line-height: 15px;
   color: #333333;
+  cursor: pointer;
+  outline: none;
 }
 
 .search__button {
@@ -406,6 +408,8 @@ template {
   width: 65px;
   border: none;
   background-color: #EC1F46;
+  cursor: pointer;
+  outline: none;
 }
 
 .user {
@@ -416,6 +420,10 @@ template {
       -ms-flex-align: center;
           align-items: center;
   text-decoration: none;
+}
+
+.user:focus {
+  outline: none;
 }
 
 .user__avatar {

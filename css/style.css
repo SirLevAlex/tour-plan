@@ -8,7 +8,7 @@ body {
   color: #333333;
 }
 
-body .container {
+.container {
   max-width: 1110px;
   margin: 0 auto;
 }
@@ -399,11 +399,21 @@ template {
 }
 
 .navbar-menu__link {
+  display: block;
   color: #ffffff;
   text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.logo {
+  display: block;
+  width: 177px;
 }
 
 .search {
+  display: block;
   position: relative;
   overflow: hidden;
   border-radius: 6px;
@@ -475,5 +485,35 @@ template {
   font-size: 14px;
   line-height: 18px;
   color: #333333;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    max-width: 700px;
+  }
+  .navbar-top {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .navbar__search {
+    margin-left: auto;
+  }
+  .navbar-menu__link {
+    font-size: 12px;
+    line-height: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 576px;
+    width: 92%;
+  }
 }
 /*# sourceMappingURL=style.css.map */

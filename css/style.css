@@ -529,14 +529,18 @@ template {
   .logo {
     width: 132px;
   }
+<<<<<<< HEAD
   .navbar-top {
+=======
+  .logo-top {
+>>>>>>> 7511a6fa8ca539ceb76f07611cf117b031d0e98c
     padding-top: 30px;
     padding-bottom: 30px;
   }
-  .navbar__search {
+  .logo__search {
     margin-left: auto;
   }
-  .navbar-menu__link {
+  .logo-menu__link {
     font-size: 12px;
     line-height: 15px;
   }

@@ -6,16 +6,14 @@
     max-width: 700px
   .logo
     width: 132px
-<<<<<<< HEAD
   .navbar  
-=======
->>>>>>> 7511a6fa8ca539ceb76f07611cf117b031d0e98c
     &-top
       padding-top: 30px
       padding-bottom: 30px
     &__search
       margin-left: auto
     &-menu
+      padding: 22px 0
       &__link
         font-size: 12px
         line-height: 15px
@@ -24,8 +22,12 @@
       width: 340px      
 @media (max-width: 768px)
   .container
-    max-width: 576px
-    width: 92%
+    max-width: 90%
+@media (max-width: 576px)
+  .container 
+    max-width: 88%
+  .logo 
+    max-width: 99px
   .navbar
     &__search, &-menu, &__user
       display: none
@@ -44,7 +46,7 @@
       &__line
         width: 16px
         height: 1px
-        background-color: $text-color
-@media (max-width: 576px)
-  .logo 
-    max-width: 99px
+        background-color: $text-color    
+@media (max-width: 480)
+  .container 
+    max-width: 88%        

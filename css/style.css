@@ -551,16 +551,7 @@ template {
 
 @media (max-width: 768px) {
   .container {
-    max-width: 90%;
-  }
-}
-
-@media (max-width: 576px) {
-  .container {
     max-width: 88%;
-  }
-  .logo {
-    max-width: 99px;
   }
   .navbar__search, .navbar-menu, .navbar__user {
     display: none;
@@ -590,6 +581,15 @@ template {
     width: 16px;
     height: 1px;
     background-color: #333333;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    max-width: 88%;
+  }
+  .logo {
+    max-width: 99px;
   }
 }
 

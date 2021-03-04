@@ -22,12 +22,7 @@
       width: 340px      
 @media (max-width: 768px)
   .container
-    max-width: 90%
-@media (max-width: 576px)
-  .container 
     max-width: 88%
-  .logo 
-    max-width: 99px
   .navbar
     &__search, &-menu, &__user
       display: none
@@ -46,7 +41,12 @@
       &__line
         width: 16px
         height: 1px
-        background-color: $text-color    
+        background-color: $text-color 
+@media (max-width: 576px)
+  .container 
+    max-width: 88%
+  .logo 
+    max-width: 99px   
 @media (max-width: 480)
   .container 
     max-width: 88%        

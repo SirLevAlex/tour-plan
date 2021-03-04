@@ -1,4 +1,4 @@
-.header
+.navbar
   background-color: #ffffff
   &-top
     display: flex
@@ -9,6 +9,18 @@
   &__search
     margin-right: auto
     margin-left: 9.73%
+  &-bottom
+    background-color: $dark
+  &-menu
+    list-style-type: none
+    margin: 0
+    padding: 31px 0
+    display: flex
+    align-items: center
+    justify-content: space-between
+    &__link
+      color: $light
+      text-decoration: none
 .search
   position: relative
   overflow: hidden
@@ -25,9 +37,9 @@
     line-height: 15px
     color: $text-color
     &:hover
-    cursor: pointer
+      cursor: pointer
     &:active
-    outline: none
+      outline: none
   &__button
     position: absolute
     right: 0
@@ -37,9 +49,9 @@
     border: none
     background-color: $primary
     &:hover
-    cursor: pointer
+      cursor: pointer
     &:focus
-    outline: none
+      outline: none
 .user
   display: flex
   align-items: center

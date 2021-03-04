@@ -6,6 +6,14 @@
     justify-content: space-between
     padding-top: 40px
     padding-bottom: 40px
+    &__menu-button
+      display: none
+    &__menu-button:active
+      background-color: $light  
+    &__menu-button:focus
+      border: none
+      outline: none  
+      background-color: $light
   &__search
     margin-right: auto
     margin-left: 9.73%
@@ -19,17 +27,14 @@
     align-items: center
     justify-content: space-between
     &__link
-      display: block
       color: $light
       text-decoration: none
       text-transform: uppercase
       font-size: 14px
       line-height: 18px
 .logo
-  display: block
   width: 177px
 .search
-  display: block
   position: relative
   overflow: hidden
   border-radius: 6px
@@ -46,20 +51,19 @@
     color: $text-color
     &:hover
       cursor: pointer
-    &:active
+    &:focus
       outline: none
   &__button
+    display: flex
     position: absolute
+    align-items: center
+    justify-content: center
     right: 0
     top: 0
     height: 100%
     width: 65px
     border: none
     background-color: $primary
-    &:hover
-      cursor: pointer
-    &:focus
-      outline: none
 .user
   display: flex
   align-items: center

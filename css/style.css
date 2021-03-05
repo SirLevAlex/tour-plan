@@ -602,6 +602,11 @@ template {
 .stars {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
+  height: 8px;
+}
+
+.stars__image {
+  margin-bottom: 6px;
 }
 
 .offer {
@@ -633,6 +638,11 @@ template {
   font-size: 14px;
   line-height: 18px;
   font-weight: bold;
+}
+
+.rating__counter::after {
+  content: '5';
+  font-size: 12px;
 }
 
 @media (max-width: 1200px) {
@@ -703,6 +713,9 @@ template {
   .stars {
     -ms-flex-preferred-size: auto;
         flex-basis: auto;
+  }
+  .hotel {
+    padding-top: 5px;
   }
   .hotel-name {
     -ms-flex-preferred-size: 100%;

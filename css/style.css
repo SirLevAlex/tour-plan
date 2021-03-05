@@ -681,6 +681,10 @@ template {
   .container {
     max-width: 88%;
   }
+  .navbar-top {
+    padding-top: 22px;
+    padding-top: 22px;
+  }
   .navbar__search, .navbar-menu, .navbar__user {
     display: none;
   }

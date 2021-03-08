@@ -642,6 +642,7 @@ template {
 .rating__counter::after {
   content: '5';
   font-size: 12px;
+  font-weight: bold;
 }
 
 .swiper-container {

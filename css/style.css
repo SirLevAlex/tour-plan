@@ -564,7 +564,6 @@ template {
 
 .hotel-info__offer {
   margin-left: 14px;
-  margin-top: 4px;
 }
 
 .hotel-info__name {
@@ -606,7 +605,7 @@ template {
 }
 
 .stars__image {
-  margin-bottom: 6px;
+  margin-bottom: 7px;
 }
 
 .offer {
@@ -645,6 +644,57 @@ template {
   font-size: 12px;
 }
 
+.swiper-container {
+  position: relative;
+  width: 100%;
+  height: 450px;
+  border-radius: 8px;
+}
+
+.swiper-container:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 122, 223, 0.48)), to(rgba(255, 255, 255, 0.128)));
+  background: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%);
+  z-index: 10;
+}
+
+.slider {
+  max-width: 728px;
+}
+
+.slider-button {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 30px;
+  height: 30px;
+  border: none;
+  z-index: 99;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 10px;
+  background-color: transparent;
+}
+
+.slider-button__next {
+  right: 18px;
+  background-image: url(../img/arrow-next.svg);
+}
+
+.slider-button__prev {
+  left: 18px;
+  background-image: url(../img/arrow-prev.svg);
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
@@ -679,7 +729,7 @@ template {
 
 @media (max-width: 767px) {
   .container {
-    max-width: 88%;
+    max-width: 87.5%;
   }
   .navbar-top {
     padding-top: 22px;
@@ -717,6 +767,7 @@ template {
   .stars {
     -ms-flex-preferred-size: auto;
         flex-basis: auto;
+    margin-right: 16px;
   }
   .hotel {
     padding-top: 5px;
@@ -748,9 +799,6 @@ template {
 }
 
 @media (max-width: 576px) {
-  .container {
-    max-width: 88%;
-  }
   .logo {
     max-width: 99px;
   }
@@ -758,7 +806,7 @@ template {
 
 @media (max-width: 480) {
   .container {
-    max-width: 88%;
+    max-width: 87.5%;
   }
 }
 /*# sourceMappingURL=style.css.map */

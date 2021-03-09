@@ -675,7 +675,7 @@ template {
 .swiper-container {
   position: relative;
   width: 100%;
-  height: 450px;
+  height: 100%;
   border-radius: 8px;
 }
 
@@ -695,6 +695,7 @@ template {
 
 .slider {
   max-width: 728px;
+  height: 450px;
 }
 
 .slider-button {
@@ -805,7 +806,7 @@ template {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-bottom: 17px;
+  margin-bottom: 14px;
 }
 
 .booking__call-text {
@@ -849,13 +850,28 @@ template {
 .map {
   border-radius: 10px;
   width: 350px;
-  height: 213px;
+  height: 210px;
   overflow: hidden;
 }
 
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
+  }
+  .slider {
+    max-width: 600px;
+  }
+  .swiper-slide__image {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .booking {
+    width: 340px;
+  }
+  .map {
+    width: 340px;
   }
 }
 
@@ -882,6 +898,24 @@ template {
   }
   .search__input {
     width: 340px;
+  }
+  .hotel-grid {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .hotel-grid__info {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .hotel__slider {
+    margin-bottom: 30px;
+  }
+  .slider {
+    max-width: 100%;
   }
 }
 
@@ -954,17 +988,40 @@ template {
             order: -1;
     margin-left: 0;
   }
+  .hotel__slider {
+    margin-bottom: 20px;
+  }
+  .hotel-grid__info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    min-height: 403px;
+  }
+  .booking {
+    width: 100%;
+  }
+  .map {
+    width: 100%;
+    height: 173px;
+  }
 }
 
 @media (max-width: 576px) {
   .logo {
     max-width: 99px;
   }
+  .slider {
+    height: 250px;
+  }
 }
 
 @media (max-width: 480) {
   .container {
     max-width: 87.5%;
+  }
+  .slider {
+    height: 179px;
   }
 }
 /*# sourceMappingURL=style.css.map */

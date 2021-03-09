@@ -3,8 +3,8 @@ const swiper = new Swiper('.swiper-container', {
   loop: true,
   // Navigation arrows
   navigation: {
-    nextEl: '.slider-button__next',
-    prevEl: '.slider-button__prev',
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
   },
     keyboard: {
       enabled: true,

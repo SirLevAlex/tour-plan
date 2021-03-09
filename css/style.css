@@ -989,6 +989,7 @@ template {
     margin-left: 0;
   }
   .hotel__slider {
+    margin-top: 18px;
     margin-bottom: 20px;
   }
   .hotel-grid__info {
@@ -1016,12 +1017,12 @@ template {
   }
 }
 
-@media (max-width: 480) {
+@media (max-width: 480px) {
   .container {
     max-width: 87.5%;
   }
   .slider {
-    height: 179px;
+    max-height: 179px;
   }
 }
 /*# sourceMappingURL=style.css.map */

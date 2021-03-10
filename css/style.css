@@ -866,7 +866,7 @@ template {
 
 .newsletter {
   position: relative;
-  padding: 78px 0 67px 0;
+  padding: 98px 0 87px 0;
 }
 
 .newsletter:before {
@@ -1152,7 +1152,7 @@ template {
     max-width: 100%;
   }
   .newsletter {
-    padding: 73px 0;
+    padding: 92px 0 93px 0;
   }
   .newsletter-wrapper {
     max-width: 700px;
@@ -1260,7 +1260,7 @@ template {
     height: 173px;
   }
   .newsletter {
-    padding: 65px 0 83px;
+    padding: 76px 0 83px;
   }
   .newsletter-wrapper {
     max-width: 87.5%;
@@ -1278,6 +1278,7 @@ template {
     margin-bottom: 37px;
   }
   .newsletter-title__strong {
+    margin-top: 5px;
     font-size: 30px;
     line-height: 38px;
   }

@@ -14,6 +14,10 @@ img {
   max-width: 100%;
 }
 
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
 a {
   display: inline-block;
 }
@@ -620,6 +624,59 @@ template {
           justify-content: space-between;
 }
 
+.hotel-slider {
+  max-width: 728px;
+  height: 450px;
+  margin: 0;
+  border-radius: 8px;
+}
+
+.hotel-slider__item {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.hotel-slider__item:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 122, 223, 0.48)), to(rgba(255, 255, 255, 0.128)));
+  background: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%);
+  z-index: 10;
+}
+
+.hotel-slider__button {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 30px;
+  height: 30px;
+  border: none;
+  z-index: 99;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 10px;
+  background-color: transparent;
+}
+
+.hotel-slider__button--next {
+  right: 18px;
+  background-image: url(../img/arrow-next.svg);
+}
+
+.hotel-slider__button--prev {
+  left: 18px;
+  background-image: url(../img/arrow-prev.svg);
+}
+
 .stars {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
@@ -670,58 +727,6 @@ template {
   content: '5';
   font-size: 12px;
   font-weight: bold;
-}
-
-.swiper-container {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  border-radius: 8px;
-}
-
-.swiper-container:after {
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 122, 223, 0.48)), to(rgba(255, 255, 255, 0.128)));
-  background: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%);
-  z-index: 10;
-}
-
-.slider {
-  max-width: 728px;
-  height: 450px;
-}
-
-.slider-button {
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  width: 30px;
-  height: 30px;
-  border: none;
-  z-index: 99;
-  cursor: pointer;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 10px;
-  background-color: transparent;
-}
-
-.slider-button-next {
-  right: 18px;
-  background-image: url(../img/arrow-next.svg);
-}
-
-.slider-button-prev {
-  left: 18px;
-  background-image: url(../img/arrow-prev.svg);
 }
 
 .booking {
@@ -945,14 +950,145 @@ template {
   line-height: 15px;
 }
 
+.reviews {
+  padding: 40px 0 70px 0;
+}
+
+.reviews__title {
+  text-transform: uppercase;
+  font-size: 30px;
+  line-height: 38px;
+  font-weight: bold;
+  text-align: center;
+  color: #333333;
+  margin-bottom: 70px;
+}
+
+.reviews-slider__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  width: 731px;
+  margin: 45px auto 0;
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 0 97px 30px 97px;
+}
+
+.reviews-slider__item:before {
+  content: '';
+  position: absolute;
+  width: 70px;
+  height: 47px;
+  top: 13px;
+  left: 64px;
+  background-image: url("../img/quote-left.svg");
+  background-repeat: no-repeat;
+}
+
+.reviews-slider__item:after {
+  content: '';
+  position: absolute;
+  width: 70px;
+  height: 47px;
+  top: 119px;
+  right: 60px;
+  background-image: url("../img/quote-right.svg");
+  background-repeat: no-repeat;
+}
+
+.reviews-slider__button {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 30px;
+  height: 30px;
+  background-repeat: no-repeat;
+  background-size: 10px;
+  background-position: center;
+  border: none;
+  background-color: transparent;
+  z-index: 99;
+  cursor: pointer;
+}
+
+.reviews-slider__button--prev {
+  background-image: url(../img/reviews-arrow-prev.svg);
+  left: 0;
+}
+
+.reviews-slider__button--next {
+  background-image: url(../img/reviews-arrow-next.svg);
+  right: 0;
+}
+
+.reviews-slider__profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: -45px;
+}
+
+.reviews-slider__avatar {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-bottom: 9px;
+}
+
+.reviews-slider__username {
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  color: #ec1f46;
+  margin-bottom: 10px;
+}
+
+.reviews-slider__date {
+  font-size: 10px;
+  line-height: 13px;
+  color: #000000;
+  margin-bottom: 4px;
+}
+
+.reviews-slider__rating {
+  margin-bottom: 31px;
+}
+
+.reviews-slider__description {
+  font-size: 12px;
+  line-height: 160%;
+  color: #333333;
+  text-align: justify;
+  z-index: 1;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
   }
-  .slider {
+  .hotel-slider {
     max-width: 600px;
   }
-  .swiper-slide__image {
+  .hotel-slider__image {
     width: 100%;
     height: 100%;
     -o-object-fit: cover;
@@ -990,6 +1126,9 @@ template {
   .search__input {
     width: 340px;
   }
+  .hotel {
+    padding-bottom: 60px;
+  }
   .hotel-grid {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1005,7 +1144,7 @@ template {
   .hotel__slider {
     margin-bottom: 30px;
   }
-  .slider {
+  .hotel-slider {
     max-width: 100%;
   }
   .newsletter {
@@ -1059,6 +1198,7 @@ template {
     margin-right: 16px;
   }
   .hotel {
+    padding-bottom: 40px;
     padding-top: 5px;
   }
   .hotel-name {
@@ -1131,7 +1271,7 @@ template {
   .logo {
     max-width: 99px;
   }
-  .slider {
+  .hotel-slider {
     height: 250px;
   }
 }
@@ -1140,8 +1280,8 @@ template {
   .container {
     max-width: 87.5%;
   }
-  .slider {
-    max-height: 179px;
+  .hotel-slider {
+    height: 179px;
   }
   .subscribe {
     max-width: 100%;

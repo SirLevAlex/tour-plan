@@ -52,3 +52,9 @@ function init() {
   })),
     myMap.geoObjects.add(placemark);
 }
+// паралакс для newsletter
+$('.newsletter').parallax({
+  imageSrc: '../img/newsletter-bg.jpg',
+  zindex: -10,
+  speed: 0.3
+});

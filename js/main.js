@@ -54,7 +54,7 @@ function init() {
 }
 // паралакс для newsletter
 $('.newsletter').parallax({
-  imageSrc: '../img/newsletter-bg.jpg',
+  imageSrc: './img/newsletter-bg.jpg',
   zindex: -10,
   speed: 0.3
 });

@@ -1088,7 +1088,7 @@ template {
   color: #333333;
   text-align: justify;
   z-index: 1;
-  overflow: scroll;
+  overflow-y: auto;
 }
 
 .activities {

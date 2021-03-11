@@ -1268,12 +1268,12 @@ template {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
+  .activities__card:nth-child(-n+2) {
+    margin-bottom: 20px;
+  }
   .card {
     width: 340px;
     height: 255px;
-  }
-  .card:nth-child(-n+2) {
-    margin-bottom: 20px;
   }
 }
 
@@ -1455,13 +1455,15 @@ template {
   .activities {
     padding-top: 0;
   }
+  .activities__card {
+    margin-bottom: 20px;
+  }
+  .activities__card:last-child {
+    margin-bottom: 0;
+  }
   .card {
     width: 100%;
     height: 255px;
-    margin-bottom: 20px;
-  }
-  .card:last-child {
-    margin-bottom: 0;
   }
 }
 /*# sourceMappingURL=style.css.map */

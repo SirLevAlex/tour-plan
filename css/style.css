@@ -887,8 +887,8 @@ template {
   display: grid;
   -ms-grid-columns: (350px)[3];
       grid-template-columns: repeat(3, 350px);
-  -ms-grid-rows: 500px 500px;
-      grid-template-rows: 500px 500px;
+  -ms-grid-rows: (500px)[2];
+      grid-template-rows: repeat(2, 500px);
   gap: 30px;
 }
 
@@ -896,24 +896,29 @@ template {
   position: relative;
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 1fr 1fr;
-      grid-template-rows: 1fr 1fr;
+  -ms-grid-rows: 50% 50%;
+      grid-template-rows: 50% 50%;
   border-radius: 8px;
   overflow: hidden;
 }
 
-.package:first-child {
+.package--first {
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: none;
+      grid-template-rows: none;
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-column: 1/3;
   border-radius: 8px;
-  overflow: hidden;
 }
 
 .package__image {
   position: relative;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .package__offer {
@@ -990,6 +995,7 @@ template {
 }
 
 .package__new-pricetag {
+  display: block;
   font-size: 24px;
   line-height: 30px;
 }
@@ -1332,6 +1338,29 @@ template {
     -o-object-fit: cover;
        object-fit: cover;
   }
+  .packages-wrapper {
+    -ms-grid-columns: (300px)[3];
+        grid-template-columns: repeat(3, 300px);
+    -ms-grid-rows: (430px)[2];
+        grid-template-rows: repeat(2, 430px);
+  }
+  .package-bio {
+    padding: 20px 20px;
+  }
+  .package-bio--first {
+    padding: 30px 25px;
+  }
+  .package__title {
+    margin-bottom: 15px;
+  }
+  .package__description {
+    margin-bottom: 25px;
+    max-height: 150px;
+    overflow-y: auto;
+  }
+  .package__old-pricetag {
+    margin-top: 15px;
+  }
   .booking {
     width: 340px;
   }
@@ -1388,6 +1417,22 @@ template {
   }
   .hotel-slider {
     max-width: 100%;
+  }
+  .packages-wrapper {
+    -ms-grid-columns: (335px)[2];
+        grid-template-columns: repeat(2, 335px);
+    -ms-grid-rows: (477px)[3];
+        grid-template-rows: repeat(3, 477px);
+  }
+  .package__title {
+    margin-bottom: 20px;
+  }
+  .package__description {
+    max-height: 180px;
+    margin-bottom: 45px;
+  }
+  .package__old-pricetag {
+    margin-top: 24px;
   }
   .newsletter {
     padding: 92px 0 93px 0;
@@ -1514,6 +1559,41 @@ template {
     width: 100%;
     height: 173px;
   }
+  .packages {
+    padding-top: 25px;
+    padding-bottom: 50px;
+  }
+  .packages__title {
+    font-size: 18px;
+    line-height: 23px;
+    margin-bottom: 42px;
+  }
+  .packages-wrapper {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+  .package__title {
+    margin-bottom: 10px;
+  }
+  .package__description {
+    overflow-y: auto;
+    max-height: 180px;
+    margin-bottom: 50px;
+    overflow-y: auto;
+  }
+  .package__text {
+    margin-bottom: 5px;
+  }
+  .package__old-pricetag {
+    margin-top: 10px;
+  }
+  .package__new-pricetag {
+    margin-bottom: 5px;
+  }
+  .package__button {
+    display: block;
+    position: static;
+  }
   .newsletter {
     padding: 76px 0 83px;
   }
@@ -1588,6 +1668,60 @@ template {
   }
   .hotel-slider {
     height: 250px;
+  }
+  .packages__title {
+    margin-bottom: 36px;
+  }
+  .packages-wrapper {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: (1fr)[5];
+        grid-template-rows: repeat(5, 1fr);
+    gap: 20px;
+  }
+  .package {
+    -ms-grid-rows: (250px)[2];
+        grid-template-rows: repeat(2, 250px);
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+  }
+  .package--first {
+    -ms-grid-columns: none;
+        grid-template-columns: none;
+  }
+  .package__offer {
+    position: absolute;
+    top: 26px;
+    left: 0;
+    border-radius: 0 4px 4px 0;
+    font-size: 10px;
+    line-height: 12px;
+    padding: 8px 12px;
+  }
+  .package-bio {
+    padding: 30px 21px 25px 32px;
+  }
+  .package-bio__rating {
+    display: none;
+  }
+  .package__title {
+    margin-bottom: 24px;
+  }
+  .package__description {
+    display: none;
+  }
+  .package__text {
+    margin-bottom: 11px;
+  }
+  .package__old-pricetag {
+    margin-top: 24px;
+    margin-bottom: 5px;
+  }
+  .package__button {
+    position: absolute;
+    right: 21px;
+    bottom: 25px;
   }
   .card {
     height: 225px;

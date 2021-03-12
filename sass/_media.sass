@@ -8,6 +8,23 @@
         width: 100%
         height: 100%
         object-fit: cover
+  .packages
+    &-wrapper
+      grid-template-columns: repeat(3, 300px)
+      grid-template-rows: repeat(2, 430px)
+  .package
+    &-bio
+      padding: 20px 20px
+      &--first
+        padding: 30px 25px
+    &__title
+      margin-bottom: 15px
+    &__description
+      margin-bottom: 25px
+      max-height: 150px
+      overflow-y: auto
+    &__old-pricetag
+      margin-top: 15px
   .booking
     width: 340px
   .map
@@ -44,6 +61,18 @@
       margin-bottom: 30px
     &-slider
       max-width: 100%
+  .packages
+    &-wrapper
+      grid-template-columns: repeat(2, 335px)
+      grid-template-rows: repeat(3, 477px)
+  .package
+    &__title
+      margin-bottom: 20px
+    &__description
+      max-height: 180px
+      margin-bottom: 45px
+    &__old-pricetag
+      margin-top: 24px
   .newsletter
     padding: 92px 0 93px 0
     &-wrapper
@@ -59,7 +88,7 @@
         max-width: 579px
         padding: 0 62px 30px
       &__description
-        max-height: 135px  
+        max-height: 135px
   .activities
     padding-bottom: 70px
     &-wrapper
@@ -127,6 +156,32 @@
   .map
     width: 100%
     height: 173px
+  .packages
+    padding-top: 25px
+    padding-bottom: 50px
+    &__title
+      font-size: 18px
+      line-height: 23px
+      margin-bottom: 42px
+    &-wrapper
+      grid-template-columns: repeat(2, 1fr)
+  .package
+    &__title
+      margin-bottom: 10px
+    &__description
+      overflow-y: auto
+      max-height: 180px
+      margin-bottom: 50px
+      overflow-y: auto
+    &__text
+      margin-bottom: 5px
+    &__old-pricetag
+      margin-top: 10px
+    &__new-pricetag
+      margin-bottom: 5px
+    &__button
+      display: block
+      position: static
   .newsletter
     padding: 76px 0 83px
     &-wrapper
@@ -163,7 +218,7 @@
           right: 50%
           transform: translateX(50%)
           margin-right: -85px
-      &__description   
+      &__description
   .activities
     padding-top: 20px
     padding-bottom: 60px
@@ -180,6 +235,43 @@
   .hotel
     &-slider
       height: 250px
+  .packages
+    &__title
+      margin-bottom: 36px
+    &-wrapper
+      grid-template-columns: 1fr
+      grid-template-rows: repeat(5, 1fr)
+      gap: 20px
+  .package
+    grid-template-rows: repeat(2, 250px)
+    grid-column: 1/2
+    &--first
+      grid-template-columns: none
+    &__offer
+      position: absolute
+      top: 26px
+      left: 0
+      border-radius: 0 4px 4px 0
+      font-size: 10px
+      line-height: 12px
+      padding: 8px 12px
+    &-bio
+      padding: 30px 21px 25px 32px
+      &__rating
+        display: none
+    &__title
+      margin-bottom: 24px
+    &__description
+      display: none
+    &__text
+      margin-bottom: 11px
+    &__old-pricetag
+      margin-top: 24px
+      margin-bottom: 5px
+    &__button
+      position: absolute
+      right: 21px
+      bottom: 25px
   .card
     height: 225px
 @media (max-width: 480px)

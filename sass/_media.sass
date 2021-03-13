@@ -11,20 +11,7 @@
   .packages
     &-wrapper
       grid-template-columns: repeat(3, 300px)
-      grid-template-rows: repeat(2, 430px)
-  .package
-    &-bio
-      padding: 20px 20px
-      &--first
-        padding: 30px 25px
-    &__title
-      margin-bottom: 15px
-    &__description
-      margin-bottom: 25px
-      max-height: 150px
-      overflow-y: auto
-    &__old-pricetag
-      margin-top: 15px
+      grid-template-rows: repeat(2, 500px)
   .booking
     width: 340px
   .map
@@ -64,15 +51,7 @@
   .packages
     &-wrapper
       grid-template-columns: repeat(2, 335px)
-      grid-template-rows: repeat(3, 477px)
-  .package
-    &__title
-      margin-bottom: 20px
-    &__description
-      max-height: 180px
-      margin-bottom: 45px
-    &__old-pricetag
-      margin-top: 24px
+      grid-template-rows: repeat(3, 500px)
   .newsletter
     padding: 92px 0 93px 0
     &-wrapper
@@ -165,23 +144,34 @@
       margin-bottom: 42px
     &-wrapper
       grid-template-columns: repeat(2, 1fr)
+      grid-template-rows: repeat(3, 515px)
   .package
+    grid-template-rows: 250px 265px
+    &--first
+      grid-template-columns: 1fr 1fr
+      grid-template-rows: none
+    &__image
+      &--first
+        height: 515px 
+    &-bio
+      height: 265px
+      padding: 20px 16px 20px 20px 
+      &--first
+        height: 515px
+        padding: 40px 20px 30px 30px
     &__title
-      margin-bottom: 10px
+      margin-bottom: 15px
     &__description
       overflow-y: auto
-      max-height: 180px
-      margin-bottom: 50px
+      max-height: 160px
+      margin-bottom: 40px
       overflow-y: auto
-    &__text
-      margin-bottom: 5px
     &__old-pricetag
-      margin-top: 10px
-    &__new-pricetag
-      margin-bottom: 5px
+      margin-top: 15px
     &__button
       display: block
       position: static
+      margin-top: 9px
   .newsletter
     padding: 76px 0 83px
     &-wrapper
@@ -246,7 +236,11 @@
     grid-template-rows: repeat(2, 250px)
     grid-column: 1/2
     &--first
-      grid-template-columns: none
+      grid-template-columns: 1fr
+    &__image
+      height: 250px
+      &--first
+        width: 100%  
     &__offer
       position: absolute
       top: 26px
@@ -256,7 +250,11 @@
       line-height: 12px
       padding: 8px 12px
     &-bio
+      position: relative
       padding: 30px 21px 25px 32px
+      height: 250px
+      &--first
+        position: relative
       &__rating
         display: none
     &__title
@@ -272,6 +270,10 @@
       position: absolute
       right: 21px
       bottom: 25px
+      &--first
+        position: absolute
+        right: 21px
+        bottom: 25px
   .card
     height: 225px
 @media (max-width: 480px)

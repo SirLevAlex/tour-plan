@@ -1485,6 +1485,10 @@ template {
       flex-basis: 48%;
 }
 
+.footer__input:focus {
+  outline: none;
+}
+
 .footer__message {
   background-color: #ffffff;
   border-radius: 4px;
@@ -1495,6 +1499,10 @@ template {
   margin-bottom: 23px;
   resize: none;
   height: 123px;
+}
+
+.footer__message:focus {
+  outline: none;
 }
 
 .footer__button {

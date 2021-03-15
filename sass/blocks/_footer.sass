@@ -34,6 +34,11 @@
     flex-wrap: wrap
     justify-content: space-between
     align-items: center
+    &-wrapper
+      width: 100%
+      display: flex
+      justify-content: space-between
+      align-items: center
   &__title
     text-transform: uppercase
     font-size: 18px
@@ -77,6 +82,8 @@
     border: none
     flex-basis: 100%
     margin-bottom: 23px
+    resize: none
+    height: 123px
   &__button
     min-width: 160px
     min-height: 50px
@@ -88,3 +95,16 @@
     line-height: 15px
     font-weight: bold
     color: #E0E0E0
+  &-disclaimer
+    display: flex
+    justify-content: flex-end
+    margin-top: 101px
+    &__item
+      display: inline-block
+      margin-right: 15px
+    &__link
+      font-size: 12px
+      line-height: 15px
+      color: $light
+    &__image
+      margin-left: 23%

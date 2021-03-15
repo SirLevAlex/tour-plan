@@ -19,6 +19,9 @@
   .card
     width: 225px
     height: 225px
+  .footer
+    &__input
+      flex-basis: 100%
 @media (max-width: 992px)
   .container
     max-width: 700px
@@ -78,6 +81,39 @@
   .card
     width: 340px
     height: 255px
+  .footer
+    padding-bottom: 33px
+    &-wrapper
+      grid-template-columns: repeat(8, 1fr)
+      grid-row-gap: 38px  
+    &__logo
+      grid-row: 1 / 2
+      grid-column: span 2
+    &__social
+      &-network
+        grid-row: 1 / 2
+        grid-column: span 6
+        align-self: center
+    &__categories
+      grid-row: 2 / 3
+      grid-column: span 2
+    &__additional
+      grid-column: span 3
+    &__legal 
+      grid-column: span 3    
+    &__contact
+      &-details
+        grid-column: span 8
+        grid-row: 3
+      &-form
+        grid-column: span 6
+        grid-row: 4
+    &__input
+      flex-basis: 48%   
+    &-disclaimer
+      justify-content: space-between
+      &__image
+        margin: 0 
 @media (max-width: 767px)
   .container
     max-width: 87.5%
@@ -152,10 +188,10 @@
       grid-template-rows: none
     &__image
       &--first
-        height: 515px 
+        height: 515px
     &-bio
       height: 265px
-      padding: 20px 16px 20px 20px 
+      padding: 20px 16px 20px 20px
       &--first
         height: 515px
         padding: 40px 20px 30px 30px
@@ -219,6 +255,10 @@
   .card
     width: 48%
     height: 255px
+  .footer
+    padding-bottom: 21px
+    &__input
+      flex-basis: 100%  
 @media (max-width: 576px)
   .logo
     max-width: 99px
@@ -240,7 +280,7 @@
     &__image
       height: 250px
       &--first
-        width: 100%  
+        width: 100%
     &__offer
       position: absolute
       top: 26px
@@ -276,6 +316,50 @@
         bottom: 25px
   .card
     height: 225px
+  .footer
+    padding-top: 69px
+    &-wrapper
+      grid-template-columns: 100%
+      grid-gap: 30px
+    &__logo
+      width: 104px
+      height: 120px
+      margin: 0
+      grid-row: 1
+      grid-column: 1
+    &__social
+      &-network 
+        flex-wrap: wrap
+        grid-row: 2
+        grid-column: 1
+    &__additional
+      grid-row: 3
+      grid-column: 1
+    &__categories
+      grid-row: 4
+      grid-column: 1
+    &__legal
+      grid-row: 5
+      grid-column: 1
+    &__contact
+      &-details
+        grid-row: 6
+        grid-column: 1
+      &-form
+        grid-row: 7
+        grid-column: 1   
+    &__title
+      &--mb-3
+        margin-bottom: 15px        
+    &-disclaimer
+      flex-wrap: wrap
+      margin-top: 30px
+      &__ul
+        margin-bottom: 10px
+      &__item
+        margin-right: 5px
+        &:last-child
+          margin-right: 0          
 @media (max-width: 480px)
   .hotel
     &-slider
@@ -291,6 +375,13 @@
   .card
     width: 100%
     height: 255px
+  .footer
+    &__form
+      &-wrapper
+        display: grid
+        grid-gap: 15px
+    &__info
+      grid-row: 1 / 2       
 @media (max-width: 320px)
   .reviews
     &-slider

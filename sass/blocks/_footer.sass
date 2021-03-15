@@ -7,7 +7,7 @@
     display: grid
     grid-template-columns: repeat(4, minmax(min-content, 1fr))
     grid-gap: 24px
-    grid-auto-rows: minmax(63px, min-content)
+    grid-auto-rows: minmax(43px, min-content)
   &__logo
     width: 166px
     height: 175px
@@ -49,6 +49,8 @@
       margin: 0 43px 0 0
     &--mb-3
       margin-bottom: 34px
+  &__legal
+    margin-left: 64px
   &__item
     font-size: 14px
     line-height: 160%
@@ -60,13 +62,17 @@
   &__icon
     &-wrapper
       display: inline-block
-      min-width: 40px
+      min-width: 35px
   &__text
     display: block
     color: $footer-text-color
     margin-bottom: 22px
   &__link
     color: inherit
+    height: 20px
+    &-wrapper
+      display: grid
+      grid-template-rows: repeat(3, 23px)
   &__input
     background-color: $light
     border-radius: 4px
@@ -75,6 +81,8 @@
     padding: 0 23px
     margin-bottom: 15px
     flex-basis: 48%
+    font-size: 12px
+    line-height: 15px
     &:focus
       outline: none
   &__message
@@ -86,9 +94,14 @@
     margin-bottom: 23px
     resize: none
     height: 123px
+    font-size: 12px
+    line-height: 15px
     &:focus
       outline: none
   &__button
+    font-size: 12px
+    line-height: 15px
+    font-weight: bold
     min-width: 160px
     min-height: 50px
     background-color: $primary

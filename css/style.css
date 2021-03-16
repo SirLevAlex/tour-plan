@@ -1815,7 +1815,13 @@ template {
             flex-direction: column;
   }
   .navbar-menu__item {
-    margin-bottom: 20px;
+    margin-bottom: 16px;
+  }
+  .navbar-menu__item:first-child {
+    margin-bottom: 27px;
+  }
+  .navbar-menu__item:nth-child(2) {
+    margin-bottom: 39px;
   }
   .navbar-menu__item:last-child {
     margin-bottom: 0;

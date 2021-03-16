@@ -29,19 +29,16 @@ const reviewsSlider = new Swiper(".reviews-slider", {
 
 ymaps.ready(init);
 function init() {
-  var myMap = new ymaps.Map(
-    "map",
-    {
-      center: [7.573638, 79.803893],
-      zoom: 11,
-      controls: [],
-    },
-  );
+  var myMap = new ymaps.Map("map", {
+    center: [7.573638, 79.803893],
+    zoom: 11,
+    controls: [],
+  });
   var zoomControl = new ymaps.control.ZoomControl({
     options: {
       position: {
         right: 10,
-        top: 60
+        top: 60,
       },
     },
   });
@@ -53,8 +50,15 @@ function init() {
     myMap.geoObjects.add(placemark);
 }
 // паралакс для newsletter
-$('.newsletter').parallax({
-  imageSrc: './img/newsletter-bg.jpg',
+$(".newsletter").parallax({
+  imageSrc: "./img/newsletter-bg.jpg",
   zindex: -10,
-  speed: 0.3
+  speed: 0.3,
+});
+
+var menuButton = document.querySelector(".menu-button");
+menuButton.addEventListener("click", function () {
+  document
+    .querySelector(".navbar-bottom")
+    .classList.toggle("navbar-bottom--visible");
 });

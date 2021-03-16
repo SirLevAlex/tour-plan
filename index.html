@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <header class="navbar">
+    <header class="navbar navbar__mobile--fixed">
       <div class="container">
         <div class="navbar-top">
           <a href="#" class="logo">
@@ -28,7 +28,10 @@
             />
           </a>
 
-          <form action="#" class="search navbar__search">
+          <form
+            action="#"
+            class="search navbar__search navbar__search--mobile--hidden"
+          >
             <input
               type="text"
               class="search__input"
@@ -39,7 +42,7 @@
             </button>
           </form>
 
-          <a href="#" class="user navbar__user">
+          <a href="#" class="user navbar__user navbar__user--mobile--hidden">
             <img
               src="img/user-avatar.jpg"
               alt="Avatar: Nathan"
@@ -61,6 +64,34 @@
       <div class="navbar-bottom">
         <div class="container">
           <ul class="navbar-menu">
+            <li class="navbar-menu__item navbar-menu__item--mobile--visible">
+              <a
+                href="#"
+                class="user navbar__user"
+              >
+                <img
+                  src="img/user-avatar.jpg"
+                  alt="Avatar: Nathan"
+                  class="user__avatar"
+                />
+                <span class="user__name user__name--light">Nathan</span>
+              </a>
+            </li>
+            <li class="navbar-menu__item navbar-menu__item--mobile--visible">
+              <form
+                action="#"
+                class="search navbar__search"
+              >
+                <input
+                  type="text"
+                  class="search__input"
+                  placeholder="Search Location"
+                />
+                <button class="search__button">
+                  <img src="img/search.svg" alt="Icon: search" />
+                </button>
+              </form>
+            </li>
             <li class="navbar-menu__item">
               <a href="#" class="navbar-menu__link">All Deals</a>
             </li>
@@ -810,17 +841,20 @@
                     alt="icon: phone"
                   />
                 </div>
-              <div class="footer__link-wrapper">
-                <a href="tel:2691500" class="footer__link"
-                >Tel (business hours) : 269 1500</a
-              >
-              <a href="tel:52566138" class="footer__link"
-                >Tel (hotline) Monday - Saturday: 52&#8209;56&#8209;61&#8209;38 (08:00&nbsp;am&nbsp;&#8209;&nbsp;20:00&nbsp;pm)</a
-              >
-              <a href="tel:52566138" class="footer__link"
-                >Tel (hotline) Sunday: 52&#8209;56&#8209;61&#8209;38 (08:00&nbsp;am&nbsp;&#8209;&nbsp;14:00&nbsp;pm)</a
-              >
-              </div>
+                <div class="footer__link-wrapper">
+                  <a href="tel:2691500" class="footer__link"
+                    >Tel (business hours) : 269 1500</a
+                  >
+                  <a href="tel:52566138" class="footer__link"
+                    >Tel (hotline) Monday - Saturday:
+                    52&#8209;56&#8209;61&#8209;38
+                    (08:00&nbsp;am&nbsp;&#8209;&nbsp;20:00&nbsp;pm)</a
+                  >
+                  <a href="tel:52566138" class="footer__link"
+                    >Tel (hotline) Sunday: 52&#8209;56&#8209;61&#8209;38
+                    (08:00&nbsp;am&nbsp;&#8209;&nbsp;14:00&nbsp;pm)</a
+                  >
+                </div>
               </li>
               <li class="footer__item footer__item--mb-2">
                 <div class="footer__icon-wrapper">

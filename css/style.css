@@ -1473,7 +1473,7 @@ template {
 }
 
 .footer__text {
-  display: block;
+  display: inline-block;
   color: #BDBDBD;
   margin-bottom: 22px;
   font-size: 14px;
@@ -1482,7 +1482,7 @@ template {
 
 .footer__link {
   color: inherit;
-  height: 20px;
+  min-height: 20px;
   font-size: 14px;
   line-height: 160%;
 }
@@ -2235,6 +2235,18 @@ template {
   .footer__link-wrapper {
     -ms-grid-rows: 23px 46px 46px;
         grid-template-rows: 23px 46px 46px;
+  }
+  .footer-disclaimer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
+  .footer-disclaimer__image {
+    max-width: 136px;
   }
 }
 

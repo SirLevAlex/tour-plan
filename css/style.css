@@ -1357,8 +1357,8 @@ template {
       grid-template-columns: repeat(4, minmax(-webkit-min-content, 1fr));
       grid-template-columns: repeat(4, minmax(min-content, 1fr));
   grid-gap: 24px;
-  grid-auto-rows: minmax(43px, -webkit-min-content);
-  grid-auto-rows: minmax(43px, min-content);
+  grid-auto-rows: minmax(33px, -webkit-min-content);
+  grid-auto-rows: minmax(33px, min-content);
 }
 
 .footer__logo {
@@ -1444,7 +1444,7 @@ template {
 }
 
 .footer__title--mb-3 {
-  margin-bottom: 34px;
+  margin-bottom: 26px;
 }
 
 .footer__legal {
@@ -1738,7 +1738,7 @@ template {
     grid-column: span 3;
   }
   .footer__contact-details {
-    margin-top: 37px;
+    margin-top: 19px;
     grid-column: span 8;
     -ms-grid-row: 3;
     grid-row: 3;
@@ -1813,6 +1813,7 @@ template {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    overflow: scroll;
   }
   .navbar-menu__item {
     margin-bottom: 16px;

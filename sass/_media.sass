@@ -395,7 +395,9 @@
       grid-column: 1
     &__link
       &-wrapper
-        grid-template-rows: 23px 46px 23px
+        grid-template-rows: 23px minmax(23px, max-content) 23px
+      &--middle
+        grid-row: 2 
     &__contact
       &-details
         grid-row: 6

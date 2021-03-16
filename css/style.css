@@ -1476,11 +1476,15 @@ template {
   display: block;
   color: #BDBDBD;
   margin-bottom: 22px;
+  font-size: 14px;
+  line-height: 160%;
 }
 
 .footer__link {
   color: inherit;
   height: 20px;
+  font-size: 14px;
+  line-height: 160%;
 }
 
 .footer__link-wrapper {
@@ -2156,8 +2160,13 @@ template {
     grid-column: 1;
   }
   .footer__link-wrapper {
-    -ms-grid-rows: 23px 46px 23px;
-        grid-template-rows: 23px 46px 23px;
+    -ms-grid-rows: 23px minmax(23px, max-content) 23px;
+        grid-template-rows: 23px minmax(23px, -webkit-max-content) 23px;
+        grid-template-rows: 23px minmax(23px, max-content) 23px;
+  }
+  .footer__link--middle {
+    -ms-grid-row: 2;
+    grid-row: 2;
   }
   .footer__contact-details {
     -ms-grid-row: 6;

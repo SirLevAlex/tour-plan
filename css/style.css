@@ -1809,7 +1809,7 @@ template {
     display: block;
     height: 100%;
     max-height: 498px;
-    overflow-y: scroll;
+    overflow-y: auto;
   }
   .navbar-menu {
     padding: 0 0 16px 0;

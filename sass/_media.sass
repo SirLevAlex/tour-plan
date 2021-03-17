@@ -146,7 +146,7 @@
           display: none
     &__user
       flex-direction: column
-      justify-content: center      
+      justify-content: center
     &-top
       padding-top: 22px
       padding-top: 22px
@@ -156,23 +156,23 @@
       top: 0
       right: 0
       top: 70px
+      height: 100%
+      max-height: 498px
+      overflow-y: scroll
       &--visible
         display: block
     &-menu
       padding: 31px 38px 68px
       flex-direction: column
-      overflow: scroll
       &__item
         margin-bottom: 16px
         &:first-child
           margin-bottom: 27px
         &:nth-child(2)
           margin-bottom: 39px
-        &:last-child
-          margin-bottom: 0
         &--mobile
           &--visible
-            display: flex  
+            display: flex
   .menu
     &-button
       padding: 0
@@ -191,13 +191,13 @@
         background-color: $text-color
   .search
     &__input
-      width: 245px      
+      width: 245px
   .user
     &__name
       &--light
         color: $light
         margin-left: 0
-        margin-top: 10px    
+        margin-top: 10px
   .stars
     flex-basis: auto
     margin-right: 16px
@@ -402,7 +402,7 @@
       &-wrapper
         grid-template-rows: 23px minmax(23px, max-content) 23px
       &--middle
-        grid-row: 2 
+        grid-row: 2
     &__contact
       &-details
         grid-row: 6

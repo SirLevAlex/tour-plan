@@ -881,6 +881,18 @@ template {
   height: 100%;
 }
 
+.button-thank {
+  border: none;
+  border-radius: 4px;
+  background-color: #ec1f46;
+  font-family: 'Nunito', sans-serif;
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 600;
+  padding: 13px 25px;
+  color: #ffffff;
+}
+
 .packages {
   padding-top: 40px;
   padding-bottom: 70px;

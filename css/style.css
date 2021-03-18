@@ -1774,7 +1774,7 @@ template {
   .container {
     max-width: 87.5%;
   }
-  .navbar__mobile--fixed {
+  .navbar--mobile--fixed {
     position: fixed;
     left: 0;
     top: 0;

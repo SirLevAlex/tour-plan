@@ -1535,6 +1535,7 @@ template {
   height: 123px;
   font-size: 12px;
   line-height: 15px;
+  overflow-y: auto;
 }
 
 .footer__message:focus {
@@ -1679,6 +1680,7 @@ template {
   font-size: 12px;
   line-height: 15px;
   outline: none;
+  overflow-y: auto;
 }
 
 .modal__button {

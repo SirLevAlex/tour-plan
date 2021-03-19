@@ -319,6 +319,9 @@
     padding-bottom: 21px
     &__input
       flex-basis: 100%
+  .modal
+    &__dialog
+      padding: 33px 55px    
 @media (max-width: 576px)
   .logo
     max-width: 99px
@@ -425,6 +428,19 @@
         margin-right: 5px
         &:last-child
           margin-right: 0
+  .modal
+    &__form
+      &-wrapper
+        display: grid
+        grid-gap: 15px
+    &__input
+      min-width: 250px
+    &__message
+      min-width: 250px
+    &__button 
+      width: 250px   
+    &__info 
+      grid-row: 1 / 2           
 @media (max-width: 480px)
   .hotel
     &-slider
@@ -455,6 +471,16 @@
       justify-content: start
       &__image
         max-width: 136px
+  .modal 
+    &__dialog
+      padding: 25px 44px 
+    &__input
+      min-width: 192px
+      height: 40px  
+    &__message
+      min-width: 192px
+    &__button
+      width: 192px         
 @media (max-width: 320px)
   .reviews
     &-slider

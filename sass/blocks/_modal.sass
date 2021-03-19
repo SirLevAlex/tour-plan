@@ -1,0 +1,83 @@
+.modal
+  &__form
+    &-wrapper
+      width: 100%
+      display: flex
+      justify-content: space-between
+      align-items: center
+  &__overlay
+    visibility: hidden
+    position: fixed
+    left: 0
+    right: 0
+    bottom: 0
+    top: 0
+    background-color: rgba(0, 143, 223, 0.39)
+    z-index: 100
+    transition: opacity 0.2s
+    &--active
+      visibility: visible
+  &__dialog
+    visibility: hidden
+    position: fixed
+    padding: 33px 88px
+    max-width: 478px
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    background-color: $dark
+    color: $light
+    border-radius: 8px
+    z-index: 101
+    transition: opacity 0.2s
+    &--active
+      visibility: visible
+  &__close
+    position: absolute
+    right: 18px
+    top: 17px
+    text-decoration: none
+    cursor: pointer
+  &__title
+    text-transform: uppercase
+    font-size: 18px
+    line-height: 23px
+    font-weight: bold
+    margin-bottom: 15px
+    text-align: center
+  &__input
+    background-color: $light
+    border-radius: 4px
+    border: none
+    width: 100%
+    min-width: 302px
+    height: 50px
+    padding: 0 23px
+    font-size: 12px
+    line-height: 15px
+    margin-bottom: 15px
+  &__message
+    background-color: $light
+    width: 100%
+    min-width: 302px
+    border-radius: 4px
+    padding: 18px 23px
+    border: none
+    margin-bottom: 15px
+    resize: none
+    height: 123px
+    font-size: 12px
+    line-height: 15px
+  &__button
+    font-size: 12px
+    line-height: 15px
+    font-weight: bold
+    min-width: 160px
+    min-height: 50px
+    background-color: $primary
+    border-radius: 4px
+    color: $light
+  &__info
+    font-weight: bold
+    font-size: 12px
+    line-height: 15px

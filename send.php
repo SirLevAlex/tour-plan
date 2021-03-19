@@ -17,7 +17,16 @@ if (strlen($email) == 0) {
   $body = "
   <h2>New message</h2>
   <b>Name:</b> $name<br>
-  <b>Phone:</b> $phone<br><br>
+  <b>Phone:</b> $phone<br>
+  <b>Message:</b><br>$message
+  ";
+} else if (strlen($email) !== 0 and strlen($name) !== 0 and strlen($phone) !== 0) {
+  $title = "New message Best Tour Plan";
+  $body = "
+  <h2>New message</h2>
+  <b>Name:</b> $name<br>
+  <b>Phone:</b> $phone<br>
+  <b>Email:</b> $email<br>
   <b>Message:</b><br>$message
   ";
 } else {
@@ -69,6 +78,8 @@ try {
 
 // Отображение результата
 if (strlen($email) == 0) {
+  header('Location: thankyou.html');
+} else if (strlen($email) !== 0 and strlen($name) !== 0 and strlen($phone) !== 0) {
   header('Location: thankyou.html');
 } else {
   header('Location: subscribe.html');

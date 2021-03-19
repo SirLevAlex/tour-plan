@@ -1663,6 +1663,7 @@ template {
   font-size: 12px;
   line-height: 15px;
   margin-bottom: 15px;
+  outline: none;
 }
 
 .modal__message {
@@ -1677,6 +1678,7 @@ template {
   height: 123px;
   font-size: 12px;
   line-height: 15px;
+  outline: none;
 }
 
 .modal__button {

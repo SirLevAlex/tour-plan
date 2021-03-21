@@ -60,6 +60,7 @@ $(document).ready(function () {
   var menuButton = $(".menu-button");
   menuButton.on("click", function () {
     $(".navbar-bottom").toggleClass("navbar-bottom--visible");
+    $("body").toggleClass("modal-open");
   });
   
   var modalButton = $('[data-toggle=modal]');
@@ -74,14 +75,18 @@ $(document).ready(function () {
   function openModal() {
     var modalOverlay = $(".modal__overlay");
     var modalDialog = $(".modal__dialog");
+    var modalBody = $("body")
     modalOverlay.addClass("modal__overlay--active");
     modalDialog.addClass("modal__dialog--active");
+    modalBody.addClass("modal-open")
   }
   function closeModal(event) {
     event.preventDefault();
     var modalOverlay = $(".modal__overlay");
     var modalDialog = $(".modal__dialog");
+    var modalBody = $("body")
     modalOverlay.removeClass("modal__overlay--active");
     modalDialog.removeClass("modal__dialog--active");
+    modalBody.removeClass("modal-open")
   }
 });

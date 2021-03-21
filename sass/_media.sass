@@ -88,42 +88,49 @@
     padding-top: 73px
     padding-bottom: 33px
     &-wrapper
-      grid-template-columns: repeat(8, 1fr)
-      grid-row-gap: 38px
+      grid-template-columns: 1.4fr repeat(2, 1fr) 1.6fr
+      row-gap: 54px
     &__logo
-      margin-top: 0
-      width: 104px
-      height: 120px
       grid-row: 1 / 2
-      grid-column: span 2
+      margin-top: 0
+      width: 99px
+      height: 108px
     &__social
       &-network
         grid-row: 1 / 2
-        grid-column: span 6
-        align-self: center
+        grid-column: 2 / 5
+        align-items: center
+        margin-top: 15px
+        margin-left: -10px
     &__categories
       grid-row: 2 / 3
-      grid-column: span 2
+      grid-column: 1 / 2
     &__additional
-      grid-column: span 3
+      grid-column: 2 / 4
+      grid-row: 2 / 3
     &__legal
+      grid-row: 2 / 3
       margin: 0
-      grid-column: span 3
     &__contact
       &-details
-        margin-top: 19px
-        grid-column: span 8
-        grid-row: 3
+        grid-row: 3 / 4
+        grid-column: span 4
+        margin-top: 5px
+    &__title
+      &--form
+        margin-top: -13px
       &-form
-        grid-column: span 6
-        grid-row: 4
+        grid-row: 4 / 5
+        grid-column: span 4
+    &__form
+      width: 539px
     &__link
       &-wrapper
         grid-template-rows: repeat(3, 23px)
     &__input
-      flex-basis: 48%
+      flex-basis: 47.5%
     &-disclaimer
-      margin-top: 63px
+      margin-top: 56px
       justify-content: space-between
       &__image
         margin: 0
@@ -321,10 +328,10 @@
       flex-basis: 100%
   .modal
     &__dialog
-      padding: 33px 55px 
+      padding: 33px 55px
       max-height: 517px
       height: 100%
-      overflow-y: auto   
+      overflow-y: auto
 @media (max-width: 576px)
   .logo
     max-width: 99px
@@ -386,7 +393,7 @@
     padding-top: 69px
     &-wrapper
       grid-template-columns: 100%
-      grid-gap: 30px
+      grid-gap: 45px
     &__logo
       margin: 0
       grid-row: 1
@@ -396,6 +403,7 @@
         flex-wrap: wrap
         grid-row: 2
         grid-column: 1
+        margin: 0
     &__additional
       grid-row: 5
       grid-column: 1
@@ -405,6 +413,7 @@
     &__legal
       grid-row: 3
       grid-column: 1
+      margin-top: 0
     &__link
       &-wrapper
         grid-template-rows: 23px minmax(23px, max-content) 23px
@@ -440,10 +449,10 @@
       min-width: 250px
     &__message
       min-width: 250px
-    &__button 
-      width: 250px   
-    &__info 
-      grid-row: 1 / 2           
+    &__button
+      width: 250px
+    &__info
+      grid-row: 1 / 2
 @media (max-width: 480px)
   .hotel
     &-slider
@@ -474,16 +483,16 @@
       justify-content: start
       &__image
         max-width: 136px
-  .modal 
+  .modal
     &__dialog
-      padding: 25px 44px 
+      padding: 25px 44px
     &__input
       min-width: 192px
-      height: 40px  
+      height: 40px
     &__message
       min-width: 192px
     &__button
-      width: 192px         
+      width: 192px
 @media (max-width: 320px)
   .reviews
     &-slider

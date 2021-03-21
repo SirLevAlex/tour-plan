@@ -31,6 +31,9 @@ a {
 
 button {
   border: none;
+}
+
+.button {
   border-radius: 4px;
   background-color: #ec1f46;
   color: #ffffff;

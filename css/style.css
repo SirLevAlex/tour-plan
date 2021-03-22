@@ -1528,9 +1528,11 @@ template {
 }
 
 .footer__input-group {
-  margin-bottom: 15px;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
   -ms-flex-preferred-size: 47.5%;
       flex-basis: 47.5%;
+  margin-bottom: 15px;
 }
 
 .footer__input:focus {

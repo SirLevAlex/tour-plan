@@ -85,15 +85,17 @@
       display: grid
       grid-template-rows: repeat(3, 23px)
   &__input
+    width: 100%
     background-color: $light
     border-radius: 4px
     border: none
     height: 50px
     padding: 0 23px
-    margin-bottom: 15px
-    flex-basis: 47.5%
     font-size: 12px
     line-height: 15px
+    &-group
+      margin-bottom: 15px
+      flex-basis: 47.5%
     &:focus
       outline: none
   &__message

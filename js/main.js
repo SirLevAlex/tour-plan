@@ -13,7 +13,7 @@ $(document).ready(function () {
     },
     effect: "coverflow",
   });
-  
+
   const reviewsSlider = new Swiper(".reviews-slider", {
     // Optional parameters
     loop: true,
@@ -27,7 +27,7 @@ $(document).ready(function () {
       onlyInViewport: false,
     },
   });
-  
+
   ymaps.ready(init);
   function init() {
     var myMap = new ymaps.Map("map", {
@@ -53,16 +53,15 @@ $(document).ready(function () {
   // паралакс для newsletter
   $(".newsletter").parallax({
     imageSrc: "./img/newsletter-bg.jpg",
-    zindex: -10,
     speed: 0.3,
   });
-  
+
   var menuButton = $(".menu-button");
   menuButton.on("click", function () {
     $(".navbar-bottom").toggleClass("navbar-bottom--visible");
     $("body").toggleClass("modal-open");
   });
-  
+
   var modalButton = $('[data-toggle=modal]');
   var closeModalButton = $(".modal__close, .modal__overlay");
   modalButton.on('click', openModal);
@@ -89,4 +88,23 @@ $(document).ready(function () {
     modalDialog.removeClass("modal__dialog--active");
     modalBody.removeClass("modal-open")
   }
+});
+
+$(".form").each(function () {
+  $(this).validate({
+    errorClass: "invalid",
+    messages: {
+      name: "Your full name",
+      phone: {
+        required: "Enter your phone number"
+      },
+      email: {
+        required: "We need your email address to contact you",
+        email: "Format of email should be name@domain.com"
+      }
+    }
+  });
+});
+$('.phone').each(function () {
+  $(this).mask('+7 (999) 999-99-99');
 });

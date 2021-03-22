@@ -12,6 +12,10 @@
     &-wrapper
       grid-template-columns: repeat(3, 300px)
       grid-template-rows: repeat(2, 500px)
+  .package
+    &__description
+      max-height: 150px
+      overflow-y: auto
   .booking
     width: 340px
   .map
@@ -21,7 +25,8 @@
     height: 225px
   .footer
     &__input
-      flex-basis: 100%
+      &-group
+        flex-basis: 100%
     &__link
       &-wrapper
         grid-template-rows: 23px 46px 23px
@@ -128,7 +133,8 @@
       &-wrapper
         grid-template-rows: repeat(3, 23px)
     &__input
-      flex-basis: 47.5%
+      &-group
+        flex-basis: 47.5%
     &-disclaimer
       margin-top: 56px
       justify-content: space-between
@@ -265,7 +271,6 @@
     &__title
       margin-bottom: 15px
     &__description
-      overflow-y: auto
       max-height: 160px
       margin-bottom: 40px
       overflow-y: auto
@@ -311,7 +316,6 @@
           right: 50%
           transform: translateX(50%)
           margin-right: -85px
-      &__description
   .activities
     padding-top: 20px
     padding-bottom: 60px
@@ -325,7 +329,8 @@
   .footer
     padding-bottom: 21px
     &__input
-      flex-basis: 100%
+      &-group
+        flex-basis: 100%
   .modal
     &__dialog
       padding: 33px 55px

@@ -14,13 +14,14 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/aos.css">
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <header class="navbar navbar--mobile--fixed">
       <div class="container">
         <div class="navbar-top">
-          <a href="index.html" class="logo">
+          <a href="index.html" class="logo" data-aos="fade-right" data-aos-duration="1500">
             <img
               src="img/horizontal-logo.svg"
               alt="Logo: Best Tour Plan"
@@ -31,6 +32,7 @@
           <form
             action="#"
             class="search navbar__search navbar__search--mobile--hidden"
+            data-aos="fade-down" data-aos-duration="1500"
           >
             <input
               type="text"
@@ -42,7 +44,7 @@
             </button>
           </form>
 
-          <a href="#" class="user navbar__user navbar__user--mobile--hidden">
+          <a href="#" class="user navbar__user navbar__user--mobile--hidden" data-aos="fade-left" data-aos-duration="1500">
             <img
               src="img/user-avatar.jpg"
               alt="Avatar: Nathan"
@@ -86,25 +88,25 @@
                 </button>
               </form>
             </li>
-            <li class="navbar-menu__item">
+            <li class="navbar-menu__item" data-aos="zoom-in" data-aos-duration="1500">
               <a href="#" class="navbar-menu__link">All Deals</a>
             </li>
-            <li class="navbar-menu__item">
+            <li class="navbar-menu__item" data-aos="zoom-in" data-aos-duration="1500">
               <a href="#" class="navbar-menu__link">Hotels</a>
             </li>
-            <li class="navbar-menu__item">
+            <li class="navbar-menu__item" data-aos="zoom-in" data-aos-duration="1500">
               <a href="#" class="navbar-menu__link">Activities</a>
             </li>
-            <li class="navbar-menu__item">
+            <li class="navbar-menu__item" data-aos="zoom-in" data-aos-duration="1500">
               <a href="#" class="navbar-menu__link">Hotel Day Packages</a>
             </li>
-            <li class="navbar-menu__item">
+            <li class="navbar-menu__item" data-aos="zoom-in" data-aos-duration="1500">
               <a href="#" class="navbar-menu__link">Restaurants</a>
             </li>
-            <li class="navbar-menu__item">
+            <li class="navbar-menu__item" data-aos="zoom-in" data-aos-duration="1500">
               <a href="#" class="navbar-menu__link">Events</a>
             </li>
-            <li class="navbar-menu__item">
+            <li class="navbar-menu__item" data-aos="zoom-in" data-aos-duration="1500">
               <a href="#" class="navbar-menu__link">Rodrigues</a>
             </li>
           </ul>
@@ -113,7 +115,7 @@
       </div>
       <!-- /.navbar-bottom -->
     </header>
-    <nav class="breadcrumb">
+    <nav class="breadcrumb" data-aos="fade-right" data-aos-duration="1500">
       <div class="container">
         <ul class="breadcrumb-list">
           <li class="breadcrumb-list__item">
@@ -128,8 +130,9 @@
     <section class="hotel">
       <div class="container">
         <div class="hotel-info">
-          <div class="hotel-info__text">
+          <div class="hotel-info__text" data-aos="fade-right" data-aos-duration="1500">
               <h1 class="hotel-name">Thank you! Message send!</h1>
+              <span class="callback">Our manager will call you back in 5 minutes.</span>
               <a href="index.html" class="button button-thank">Back to the main</a>
             </p>
         </div>
@@ -140,10 +143,10 @@
     <footer class="footer">
       <div class="container">
         <div class="footer-wrapper">
-          <a class="logo footer__logo" href="index.html">
+          <a class="logo footer__logo" href="index.html" data-aos="zoom-in" data-aos-duration="1500">
             <img src="img/vertical-logo.svg" alt="Logo: Best Tour Plan"
           /></a>
-          <div class="footer__list footer__categories">
+          <div class="footer__list footer__categories" data-aos="zoom-in" data-aos-duration="1500">
             <h3 class="footer__title">All Categories</h3>
             <ul class="footer__ul">
               <li class="footer__item">
@@ -173,7 +176,7 @@
             </ul>
           </div>
           <!-- /.footer__list -->
-          <div class="footer__list footer__additional">
+          <div class="footer__list footer__additional" data-aos="zoom-in" data-aos-duration="1500">
             <h3 class="footer__title">Additional Information</h3>
             <ul class="footer__ul">
               <li class="footer__item">
@@ -199,7 +202,7 @@
             </ul>
           </div>
           <!-- /.footer__list -->
-          <div class="footer__social-network">
+          <div class="footer__social-network" data-aos="zoom-in" data-aos-duration="1500">
             <h3 class="footer__title footer__title--inline">Social Network</h3>
             <div class="footer__social-links">
               <a
@@ -222,7 +225,7 @@
             <!-- /.footer__social-links -->
           </div>
           <!-- /.footer__social-network -->
-          <div class="footer__list footer__legal">
+          <div class="footer__list footer__legal" data-aos="zoom-in" data-aos-duration="1500">
             <h3 class="footer__title">Legal Information</h3>
             <ul class="footer__ul">
               <li class="footer__item">
@@ -240,7 +243,7 @@
             </ul>
           </div>
           <!-- /.footer__list -->
-          <div class="footer__contact-details">
+          <div class="footer__contact-details" data-aos="zoom-in" data-aos-duration="1500">
             <h3 class="footer__title footer__title--mb-3">Contact Details</h3>
             <span class="footer__text"
               >Feel free to contact us by phone, email or by our contact
@@ -309,7 +312,7 @@
             </ul>
           </div>
           <!-- /.footer__contact-details -->
-          <div class="footer__contact-form">
+          <div class="footer__contact-form" data-aos="zoom-in" data-aos-duration="1500">
             <h3 class="footer__title footer__title--mb-3">Send us a message</h3>
             <form action="send.php" method="POST" class="form footer__form">
               <div class="footer__input-group"><input
@@ -378,6 +381,7 @@
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/jquery.mask.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/aos.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

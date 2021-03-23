@@ -88,29 +88,31 @@ $(document).ready(function () {
     modalDialog.removeClass("modal__dialog--active");
     modalBody.removeClass("modal-open")
   }
+
+  $(".form").each(function () {
+    $(this).validate({
+      errorClass: "invalid",
+      messages: {
+        name: {
+          required: "Your full name",
+          minlength: "Name not shorter than 2 letters"
+        },
+        phone: {
+          required: "Enter your phone number",
+          minlength: "Phone number type: +7 (999) 999-99-99"
+        },
+        email: {
+          required: "We need your email address to contact you",
+          email: "Format of email should be name@domain.com"
+        }
+      }
+    });
+  });
+  $('.phone').each(function () {
+    $(this).mask("+7 (999) 999-99-99", {
+      'translation': { 9: { pattern: /[0-9*]/ } }
+    });
+  });
+  AOS.init();
 });
 
-$(".form").each(function () {
-  $(this).validate({
-    errorClass: "invalid",
-    messages: {
-      name: {
-        required: "Your full name",
-        minlength: "Name not shorter than 2 letters"
-      },
-      phone: {
-        required: "Enter your phone number",
-        minlength: "Phone number type: +7 (999) 999-99-99"
-      },
-      email: {
-        required: "We need your email address to contact you",
-        email: "Format of email should be name@domain.com"
-      }
-    }
-  });
-});
-$('.phone').each(function () {
-  $(this).mask("+7 (999) 999-99-99", {
-    'translation': { 9: { pattern: /[0-9*]/ } }
-  });
-});

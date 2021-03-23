@@ -14,12 +14,13 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/aos.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <header class="navbar navbar--mobile--fixed">
       <div class="container">
-        <div class="navbar-top">
+        <div class="navbar-top" data-aos="fade-right" data-aos-duration="700">
           <a href="#" class="logo">
             <img
               src="img/horizontal-logo.svg"
@@ -31,6 +32,8 @@
           <form
             action="#"
             class="search navbar__search navbar__search--mobile--hidden"
+            data-aos="fade-down"
+            data-aos-duration="1000"
           >
             <input
               type="text"
@@ -42,7 +45,12 @@
             </button>
           </form>
 
-          <a href="#" class="user navbar__user navbar__user--mobile--hidden">
+          <a
+            href="#"
+            class="user navbar__user navbar__user--mobile--hidden"
+            data-aos="fade-left"
+            data-aos-duration="1500"
+          >
             <img
               src="img/user-avatar.jpg"
               alt="Avatar: Nathan"
@@ -86,25 +94,53 @@
                 </button>
               </form>
             </li>
-            <li class="navbar-menu__item">
+            <li
+              class="navbar-menu__item"
+              data-aos="zoom-in"
+              data-aos-duration="1500"
+            >
               <a href="#" class="navbar-menu__link">All Deals</a>
             </li>
-            <li class="navbar-menu__item">
+            <li
+              class="navbar-menu__item"
+              data-aos="zoom-in"
+              data-aos-duration="1500"
+            >
               <a href="#" class="navbar-menu__link">Hotels</a>
             </li>
-            <li class="navbar-menu__item">
+            <li
+              class="navbar-menu__item"
+              data-aos="zoom-in"
+              data-aos-duration="1500"
+            >
               <a href="#" class="navbar-menu__link">Activities</a>
             </li>
-            <li class="navbar-menu__item">
+            <li
+              class="navbar-menu__item"
+              data-aos="zoom-in"
+              data-aos-duration="1500"
+            >
               <a href="#" class="navbar-menu__link">Hotel Day Packages</a>
             </li>
-            <li class="navbar-menu__item">
+            <li
+              class="navbar-menu__item"
+              data-aos="zoom-in"
+              data-aos-duration="1500"
+            >
               <a href="#" class="navbar-menu__link">Restaurants</a>
             </li>
-            <li class="navbar-menu__item">
+            <li
+              class="navbar-menu__item"
+              data-aos="zoom-in"
+              data-aos-duration="1500"
+            >
               <a href="#" class="navbar-menu__link">Events</a>
             </li>
-            <li class="navbar-menu__item">
+            <li
+              class="navbar-menu__item"
+              data-aos="zoom-in"
+              data-aos-duration="1500"
+            >
               <a href="#" class="navbar-menu__link">Rodrigues</a>
             </li>
           </ul>
@@ -113,7 +149,7 @@
       </div>
       <!-- /.navbar-bottom -->
     </header>
-    <nav class="breadcrumb">
+    <nav class="breadcrumb" data-aos="fade-right" data-aos-duration="1500">
       <div class="container">
         <ul class="breadcrumb-list">
           <li class="breadcrumb-list__item">
@@ -131,7 +167,11 @@
     <section class="hotel">
       <div class="container">
         <div class="hotel-info">
-          <div class="hotel-info__text">
+          <div
+            class="hotel-info__text"
+            data-aos="fade-right"
+            data-aos-duration="1500"
+          >
             <div class="hotel-wrapper">
               <div class="stars">
                 <img class="stars__image" src="img/star.svg" alt="star" />
@@ -151,7 +191,11 @@
             </p>
           </div>
           <!-- /.hotel-info__text -->
-          <div class="rating hotel-info__rating">
+          <div
+            class="rating hotel-info__rating"
+            data-aos="fade-left"
+            data-aos-duration="1500"
+          >
             <span class="rating__text">User Rattings</span>
             <span class="rating__counter">4.5/</span>
           </div>
@@ -160,7 +204,11 @@
         <!-- /.hotel-info -->
         <div class="hotel-grid">
           <!-- Slider main container -->
-          <div class="swiper-container hotel-slider hotel__slider">
+          <div
+            class="swiper-container hotel-slider hotel__slider"
+            data-aos="fade-right"
+            data-aos-duration="1500"
+          >
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
               <!-- Slides -->
@@ -210,7 +258,11 @@
             ></button>
           </div>
           <!-- /.swiper-container -->
-          <div class="hotel-grid__info">
+          <div
+            class="hotel-grid__info"
+            data-aos="fade-left"
+            data-aos-duration="1500"
+          >
             <div class="booking">
               <div class="booking__info">
                 <div class="booking__price">
@@ -240,7 +292,9 @@
                 </a>
               </div>
               <!-- /.booking__call-center -->
-              <button  data-toggle="modal" class="button booking__button">View Other Options</button>
+              <button data-toggle="modal" class="button booking__button">
+                View Other Options
+              </button>
             </div>
             <!-- /.booking -->
             <div id="map" class="map">
@@ -262,9 +316,15 @@
     </section>
     <section class="packages">
       <div class="container">
-        <h2 class="packages__title">Other Packages</h2>
+        <h2 class="packages__title" data-aos="zoom-in" data-aos-duration="1500">
+          Other Packages
+        </h2>
         <div class="packages-wrapper">
-          <div class="package packages__pack package--first">
+          <div
+            class="package packages__pack package--first"
+            data-aos="fade-right"
+            data-aos-duration="1500"
+          >
             <img
               src="img/package-1.jpg"
               alt="Hotel Blue Haven"
@@ -311,14 +371,21 @@
                 >$ 10,500</del
               >
               <strong class="package__new-pricetag">$ 8,500</strong>
-              <button data-toggle="modal" class="button package__button package__button--first">
+              <button
+                data-toggle="modal"
+                class="button package__button package__button--first"
+              >
                 Book Now
               </button>
             </div>
             <!-- /.package-bio -->
           </div>
           <!-- /.package packages__pack -->
-          <div class="package packages__pack">
+          <div
+            class="package packages__pack"
+            data-aos="fade-left"
+            data-aos-duration="1500"
+          >
             <img
               src="img/package-2.jpg"
               alt="LUX* Belle Mare"
@@ -346,12 +413,18 @@
               <!-- /.package__text -->
               <del class="package__old-pricetag">$ 8,500</del>
               <strong class="package__new-pricetag">$ 3,000</strong>
-              <button data-toggle="modal" class="button package__button">Book Now</button>
+              <button data-toggle="modal" class="button package__button">
+                Book Now
+              </button>
             </div>
             <!-- /.package-bio -->
           </div>
           <!-- /.package packages__pack -->
-          <div class="package packages__pack">
+          <div
+            class="package packages__pack"
+            data-aos="fade-right"
+            data-aos-duration="1500"
+          >
             <img
               src="img/package-3.jpg"
               alt="White Palace"
@@ -379,12 +452,18 @@
               <!-- /.package__text -->
               <del class="package__old-pricetag">$ 10,500</del>
               <strong class="package__new-pricetag">$ 9,500</strong>
-              <button data-toggle="modal" class="button package__button">Book Now</button>
+              <button data-toggle="modal" class="button package__button">
+                Book Now
+              </button>
             </div>
             <!-- /.package-bio -->
           </div>
           <!-- /.package packages__pack -->
-          <div class="package packages__pack">
+          <div
+            class="package packages__pack"
+            data-aos="fade-up"
+            data-aos-duration="1500"
+          >
             <img
               src="img/package-4.jpg"
               alt="Luxury Place"
@@ -412,12 +491,18 @@
               <!-- /.package__text -->
               <del class="package__old-pricetag">$ 4,500</del>
               <strong class="package__new-pricetag">$ 2,500</strong>
-              <button data-toggle="modal" class="button package__button">Book Now</button>
+              <button data-toggle="modal" class="button package__button">
+                Book Now
+              </button>
             </div>
             <!-- /.package-bio -->
           </div>
           <!-- /.package packages__pack -->
-          <div class="package packages__pack">
+          <div
+            class="package packages__pack"
+            data-aos="fade-left"
+            data-aos-duration="1500"
+          >
             <img
               src="img/package-5.jpg"
               alt="Hotel Five Star"
@@ -445,7 +530,9 @@
               <!-- /.package__text -->
               <del class="package__old-pricetag">$ 6,500</del>
               <strong class="package__new-pricetag">$ 3,500</strong>
-              <button data-toggle="modal" class="button package__button">Book Now</button>
+              <button data-toggle="modal" class="button package__button">
+                Book Now
+              </button>
             </div>
             <!-- /.package-bio -->
           </div>
@@ -457,7 +544,11 @@
     </section>
     <section class="newsletter">
       <div class="newsletter-wrapper">
-        <h2 class="newsletter-title">
+        <h2
+          class="newsletter-title"
+          data-aos="fade-right"
+          data-aos-duration="1500"
+        >
           subscribe to our
           <span class="newsletter-title__strong">Newsletter</span>
         </h2>
@@ -465,6 +556,8 @@
           action="send.php"
           method="POST"
           class="form subscribe newsletter__subscribe"
+          data-aos="fade-left"
+          data-aos-duration="1500"
         >
           <input
             type="email"
@@ -473,15 +566,23 @@
             name="email"
             required
           />
-          <button type="submit" name="btnSub" class="button subscribe__button">Send</button>
+          <button type="submit" name="btnSub" class="button subscribe__button">
+            Send
+          </button>
         </form>
       </div>
       <!-- /.newsletter-wrapper -->
     </section>
     <section class="reviews">
       <div class="container">
-        <h2 class="reviews__title">What people think about us</h2>
-        <div class="swiper-container reviews-slider">
+        <h2 class="reviews__title" data-aos="zoom-in" data-aos-duration="1500">
+          What people think about us
+        </h2>
+        <div
+          class="swiper-container reviews-slider"
+          data-aos="zoom-in"
+          data-aos-duration="1500"
+        >
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <div class="reviews-slider__item">
@@ -674,34 +775,64 @@
     </section>
     <section class="activities">
       <div class="container">
-        <h2 class="activities__title">Other Activities</h2>
+        <h2
+          class="activities__title"
+          data-aos="fade-right"
+          data-aos-duration="1500"
+        >
+          Other Activities
+        </h2>
         <div class="activities-wrapper">
-          <div class="card activities__card">
+          <div
+            class="card activities__card"
+            data-aos="fade-right"
+            data-aos-duration="1500"
+          >
             <img class="card__image" src="img/activitie-1.jpg" alt="" />
             <h3 class="card__title">
               The curious corner <br />of&nbsp;chamarel
             </h3>
-            <button data-toggle="modal" class="button card__button">Book Now</button>
+            <button data-toggle="modal" class="button card__button">
+              Book Now
+            </button>
           </div>
           <!-- /.card -->
-          <div class="card activities__card">
+          <div
+            class="card activities__card"
+            data-aos="fade-up"
+            data-aos-duration="1500"
+          >
             <img class="card__image" src="img/activitie-2.jpg" alt="" />
             <h3 class="card__title">Gymkhana club golf <br />course</h3>
-            <button data-toggle="modal" class="button card__button">Book Now</button>
+            <button data-toggle="modal" class="button card__button">
+              Book Now
+            </button>
           </div>
           <!-- /.card -->
-          <div class="card activities__card">
+          <div
+            class="card activities__card"
+            data-aos="fade-up"
+            data-aos-duration="1500"
+          >
             <img class="card__image" src="img/activitie-3.jpg" alt="" />
             <h3 class="card__title">
               Tamarind falls hiking <br />trip-full day
             </h3>
-            <button data-toggle="modal" class="button card__button">Book Now</button>
+            <button data-toggle="modal" class="button card__button">
+              Book Now
+            </button>
           </div>
           <!-- /.card -->
-          <div class="card activities__card">
+          <div
+            class="card activities__card"
+            data-aos="fade-left"
+            data-aos-duration="1500"
+          >
             <img class="card__image" src="img/activitie-4.jpg" alt="" />
             <h3 class="card__title">The blue marine discovery <br />quest</h3>
-            <button data-toggle="modal" class="button card__button">Book Now</button>
+            <button data-toggle="modal" class="button card__button">
+              Book Now
+            </button>
           </div>
           <!-- /.card -->
         </div>
@@ -712,10 +843,19 @@
     <footer class="footer">
       <div class="container">
         <div class="footer-wrapper">
-          <a class="logo footer__logo" href="#">
+          <a
+            class="logo footer__logo"
+            href="#"
+            data-aos="zoom-in"
+            data-aos-duration="1500"
+          >
             <img src="img/vertical-logo.svg" alt="Logo: Best Tour Plan"
           /></a>
-          <div class="footer__list footer__categories">
+          <div
+            class="footer__list footer__categories"
+            data-aos="zoom-in"
+            data-aos-duration="1500"
+          >
             <h3 class="footer__title">All Categories</h3>
             <ul class="footer__ul">
               <li class="footer__item">
@@ -745,7 +885,11 @@
             </ul>
           </div>
           <!-- /.footer__list -->
-          <div class="footer__list footer__additional">
+          <div
+            class="footer__list footer__additional"
+            data-aos="zoom-in"
+            data-aos-duration="1500"
+          >
             <h3 class="footer__title">Additional Information</h3>
             <ul class="footer__ul">
               <li class="footer__item">
@@ -771,7 +915,11 @@
             </ul>
           </div>
           <!-- /.footer__list -->
-          <div class="footer__social-network">
+          <div
+            class="footer__social-network"
+            data-aos="zoom-in"
+            data-aos-duration="1500"
+          >
             <h3 class="footer__title footer__title--inline">Social Network</h3>
             <div class="footer__social-links">
               <a
@@ -794,7 +942,11 @@
             <!-- /.footer__social-links -->
           </div>
           <!-- /.footer__social-network -->
-          <div class="footer__list footer__legal">
+          <div
+            class="footer__list footer__legal"
+            data-aos="zoom-in"
+            data-aos-duration="1500"
+          >
             <h3 class="footer__title">Legal Information</h3>
             <ul class="footer__ul">
               <li class="footer__item">
@@ -812,7 +964,11 @@
             </ul>
           </div>
           <!-- /.footer__list -->
-          <div class="footer__contact-details">
+          <div
+            class="footer__contact-details"
+            data-aos="zoom-in"
+            data-aos-duration="1500"
+          >
             <h3 class="footer__title footer__title--mb-3">Contact Details</h3>
             <span class="footer__text"
               >Feel free to contact us by phone, email or by our contact
@@ -879,25 +1035,33 @@
             </ul>
           </div>
           <!-- /.footer__contact-details -->
-          <div class="footer__contact-form">
+          <div
+            class="footer__contact-form"
+            data-aos="zoom-in"
+            data-aos-duration="1500"
+          >
             <h3 class="footer__title footer__title--form">Send us a message</h3>
             <form action="send.php" method="POST" class="footer__form form">
-              <div class="footer__input-group"><input
-                type="text"
-                class="input footer__input"
-                placeholder="Your Full Name*"
-                name="name"
-                minlength="2"
-                required
-              /></div>
-              <div class="footer__input-group"> <input
-                type="tel"
-                class="phone input footer__input"
-                placeholder="Phone Number*"
-                minlength="18"
-                name="phone"
-                required
-              /></div>
+              <div class="footer__input-group">
+                <input
+                  type="text"
+                  class="input footer__input"
+                  placeholder="Your Full Name*"
+                  name="name"
+                  minlength="2"
+                  required
+                />
+              </div>
+              <div class="footer__input-group">
+                <input
+                  type="tel"
+                  class="phone input footer__input"
+                  placeholder="Phone Number*"
+                  minlength="18"
+                  name="phone"
+                  required
+                />
+              </div>
               <textarea
                 class="footer__message"
                 cols="30"
@@ -906,7 +1070,11 @@
                 name="message"
               ></textarea>
               <div class="footer__form-wrapper">
-                <button class="button footer__button" name="btnFoot" type="submit">
+                <button
+                  class="button footer__button"
+                  name="btnFoot"
+                  type="submit"
+                >
                   Send
                 </button>
                 <span class="footer__info">* Required Fields</span>
@@ -980,7 +1148,9 @@
             name="message"
           ></textarea>
           <div class="modal__form-wrapper">
-            <button class="button modal__button" name="btnMod" type="submit">Send</button>
+            <button class="button modal__button" name="btnMod" type="submit">
+              Send
+            </button>
             <span class="modal__info">* Required Fields</span>
           </div>
           <!-- /.modal__form-wrapper -->
@@ -994,6 +1164,7 @@
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/jquery.mask.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/aos.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

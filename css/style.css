@@ -60,7 +60,6 @@ button:focus {
   color: #ec1f46;
   font-size: 12px;
   line-height: 15px;
-  border-bottom: 1px solid #ec1f46;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -903,6 +902,11 @@ template {
   padding: 13px 25px;
 }
 
+.call-back {
+  font-size: 12px;
+  line-height: 19px;
+}
+
 .packages {
   padding-top: 40px;
   padding-bottom: 70px;
@@ -1275,7 +1279,7 @@ template {
 }
 
 .activities {
-  padding-top: 60px;
+  padding-top: 55px;
   padding-bottom: 98px;
 }
 
@@ -2429,7 +2433,7 @@ template {
     max-width: 100%;
   }
   .activities {
-    padding-top: 40px;
+    padding-top: 38px;
   }
   .activities__card {
     margin-bottom: 20px;

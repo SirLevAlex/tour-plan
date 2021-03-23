@@ -96,11 +96,11 @@ $(".form").each(function () {
     messages: {
       name: {
         required: "Your full name",
-        minlength: "Name not shorter than 2 letters",
+        minlength: "Name not shorter than 2 letters"
       },
       phone: {
         required: "Enter your phone number",
-        min: "Phone number type: +7 (999) 999-99-99",
+        minlength: "Phone number type: +7 (999) 999-99-99"
       },
       email: {
         required: "We need your email address to contact you",
@@ -111,7 +111,6 @@ $(".form").each(function () {
 });
 $('.phone').each(function () {
   $(this).mask("+7 (999) 999-99-99", {
-    'translation': { 0: { pattern: /[0-9*]/ } }
+    'translation': { 9: { pattern: /[0-9*]/ } }
   });
-
 });

@@ -60,10 +60,15 @@ $(document).ready(function () {
   menuButton.on("click", function () {
     $(".navbar-bottom").toggleClass("navbar-bottom--visible");
     $("body").toggleClass("modal-open");
+    if ($(".navbar-bottom").hasClass("navbar-bottom--visible")) {
+      hotelSlider.navigation.destroy();
+    } else {
+      hotelSlider.navigation.init();
+    }
   });
 
   var modalButton = $('[data-toggle=modal]');
-  var closeModalButton = $(".modal__close, .modal__overlay");
+  var closeModalButton = $(".modal__close");
   modalButton.on('click', openModal);
   closeModalButton.on('click', closeModal);
   $(document).keydown(function (press) {
@@ -113,6 +118,17 @@ $(document).ready(function () {
       'translation': { 9: { pattern: /[0-9*]/ } }
     });
   });
+  var removeAos = function () { };
+  window.onresize = function (event) {
+    document.location.reload();
+  }
+  if (window.innerWidth < 768) {
+    removeAos = function () {
+      var elem = document.getElementById('aos-css-file');
+      elem.parentNode.removeChild(elem);
+      return false;
+    }
+    removeAos();
+  }
   AOS.init();
 });
-

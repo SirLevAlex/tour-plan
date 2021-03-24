@@ -109,7 +109,13 @@ $(document).ready(function () {
   var removeAos = function () { };
   window.onresize = function (event) {
     document.location.reload();
+    var mapImage = $(".map__image"),
+      imgWidth = mapImage.css("width"),
+      imgHeight = mapImage.css("heigth");
+    imgWidth.load();
+    imgHeight.load();
   }
+
   if (window.innerWidth < 768) {
     removeAos = function () {
       var elem = document.getElementById('aos-css-file');

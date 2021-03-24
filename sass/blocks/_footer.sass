@@ -20,6 +20,12 @@
       display: flex
       min-width: 83px
       justify-content: space-between
+    &-icon
+      fill: $footer-text-color
+      width: 21px
+      height: 21px
+      &:hover
+        fill: $light
     &-network
       display: flex
       grid-row: 2/4
@@ -81,6 +87,8 @@
     min-height: 20px
     font-size: 14px
     line-height: 160%
+    &:hover
+      color: $light
     &-wrapper
       display: grid
       grid-template-rows: repeat(3, 23px)
@@ -136,5 +144,7 @@
       font-size: 12px
       line-height: 15px
       color: $light
+      &:hover
+        color: $footer-text-color
     &__image
       margin-left: 23%

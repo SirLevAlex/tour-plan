@@ -210,11 +210,7 @@
         <!-- /.hotel-info -->
         <div class="hotel-grid">
           <!-- Slider main container -->
-          <div
-            class="swiper-container hotel-slider hotel__slider"
-            data-aos="fade-right"
-            data-aos-duration="1500"
-          >
+          <div class="swiper-container hotel-slider hotel__slider">
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
               <!-- Slides -->
@@ -264,11 +260,7 @@
             ></button>
           </div>
           <!-- /.swiper-container -->
-          <div
-            class="hotel-grid__info"
-            data-aos="fade-left"
-            data-aos-duration="1500"
-          >
+          <div class="hotel-grid__info">
             <div class="booking">
               <div class="booking__info">
                 <div class="booking__price">
@@ -929,18 +921,22 @@
                 href="https://www.facebook.com/"
                 class="footer__link"
                 target="_blank"
-                ><img src="img/facebook.svg" alt="icon: facebook" /></a
+              >
+                <svg class="footer__social-icon">
+                  <use xlink:href="img/sprite.svg#facebook"></use></svg></a
               ><a
                 href="https://www.youtube.com/"
                 class="footer__link"
                 target="_blank"
-                ><img src="img/youtube.svg" alt="icon: youtube" /></a
+                ><svg class="footer__social-icon">
+                  <use xlink:href="img/sprite.svg#youtube"></use></svg></a
               ><a
                 href="https://www.instagram.com/?hl=ru"
                 class="footer__link"
                 target="_blank"
-                ><img src="img/instagram.svg" alt="icon: instagram"
-              /></a>
+                ><svg class="footer__social-icon">
+                  <use xlink:href="img/sprite.svg#instagram"></use></svg
+              ></a>
             </div>
             <!-- /.footer__social-links -->
           </div>
@@ -1116,8 +1112,9 @@
       <div class="modal__overlay"></div>
       <div class="modal__dialog">
         <a href="#" class="modal__close"
-          ><img src="img/modal-close.svg" alt="icon: close"
-        /></a>
+          ><svg class="modal__icon">
+            <use xlink:href="img/sprite.svg#modalclose"></use></svg
+        ></a>
         <h3 class="modal__title">Booking</h3>
         <form action="send.php" method="POST" class="modal__form form">
           <input

@@ -7,10 +7,11 @@
     <title>Best Tour Plan - Hotel Booking</title>
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
     <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
-
+    <link rel="preload" as="image" href="img/slide-1.jpg" />
+    <link rel="preload" as="image" href="img/map.jpg" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:wght@400;600;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&ampfamily=Nunito:wght@400;600;800&ampdisplay=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
@@ -302,14 +303,11 @@
               </button>
             </div>
             <!-- /.booking -->
-            <div id="map" class="map">
-              <iframe
-                class="map-google"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3955.004632620622!2d79.80141631410925!3d7.5744723121559385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae2c96110de8289%3A0x3fd7668bc2d85eb9!2sGrand%20Hilton%20Hotel!5e0!3m2!1sru!2sge!4v1615308732117!5m2!1sru!2sge"
-                style="border: 0"
-                allowfullscreen=""
-                loading="lazy"
-              ></iframe>
+            <div
+              class="map show-map-on-click"
+              data-map="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6492.051539678476!2d-122.42671604785984!3d37.775560454751144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808580a196ede719%3A0x2fb5607634331f2f!2zSGF5ZXMgVmFsbGV5LCDQodCw0L0t0KTRgNCw0L3RhtC40YHQutC-LCDQmtCw0LvQuNGE0L7RgNC90LjRjyA5NDEwMiwg0KHQqNCQ!5e0!3m2!1sru!2sge!4v1616587724924!5m2!1sru!2sge"
+            >
+              <img src="img/map.jpg" alt="Map" class="map__image" />
             </div>
             <!-- /.map -->
           </div>
@@ -1163,13 +1161,11 @@
       </div>
     </div>
     <script src="js/jquery-3.6.0.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="js/parallax.min.js"></script>
-    <script src="https://api-maps.yandex.ru/2.1/?apikey=7f80ef81-9b84-4844-8290-71cdb354d813&lang=ru_RU"></script>
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/jquery.mask.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/aos.js"></script>
-    <script src="js/main.js"></script>
+    <script src="js/main.min.js"></script>
   </body>
 </html>

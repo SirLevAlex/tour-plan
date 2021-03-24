@@ -28,28 +28,14 @@ $(document).ready(function () {
     },
   });
 
-  ymaps.ready(init);
-  function init() {
-    var myMap = new ymaps.Map("map", {
-      center: [7.573638, 79.803893],
-      zoom: 11,
-      controls: [],
-    });
-    var zoomControl = new ymaps.control.ZoomControl({
-      options: {
-        position: {
-          right: 10,
-          top: 60,
-        },
-      },
-    });
-    myMap.controls.add(zoomControl);
-    (placemark = new ymaps.Placemark([7.573638, 79.803893], {
-      hintContent: "Grand Hilton Hotel",
-      balloonContent: "77 Corea Watta, Chilaw 61000, Sri Lanka",
-    })),
-      myMap.geoObjects.add(placemark);
-  }
+  $(".show-map-on-click").click(function () {
+    var map = $(this).attr("data-map"),
+      mapStyle = $(".map"),
+      mapWidth = mapStyle.css("width"),
+      mapHeight = mapStyle.css("height");
+    $(this).html('<iframe src="' + map + '" width="' + mapWidth + '" height="' + mapHeight + '" frameborder="0" style="border:0" allowfullscreen></iframe>');
+  });
+
   // паралакс для newsletter
   $(".newsletter").parallax({
     imageSrc: "./img/newsletter-bg.jpg",
@@ -61,9 +47,11 @@ $(document).ready(function () {
     $(".navbar-bottom").toggleClass("navbar-bottom--visible");
     $("body").toggleClass("modal-open");
     if ($(".navbar-bottom").hasClass("navbar-bottom--visible")) {
-      hotelSlider.navigation.destroy();
+      hotelSlider.navigation.destroy(),
+        reviewsSlider.navigation.destroy();
     } else {
-      hotelSlider.navigation.init();
+      hotelSlider.navigation.init(),
+        reviewsSlider.navigation.init();
     }
   });
 

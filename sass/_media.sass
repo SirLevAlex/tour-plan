@@ -30,6 +30,36 @@
     &__link
       &-wrapper
         grid-template-rows: 23px 46px 23px
+@media (min-width: 992px)
+  .navbar
+    &-menu
+      &__link
+        &:hover
+          color: $footer-text-color
+  .user
+    &__name
+      &:hover
+        color: $footer-text-color
+  .button
+    &:hover
+      background-color: #EC192D
+      color: #EBEBEB
+  .footer
+    &__social
+      &-icon
+        &:hover
+          fill: $light
+    &__link
+      &:hover
+        color: $light
+    &-disclaimer
+      &__link
+        &:hover
+          color: $footer-text-color
+  .modal
+    &__icon
+      &:hover
+        fill: $footer-text-color
 @media (max-width: 992px)
   .container
     max-width: 700px
@@ -306,12 +336,14 @@
         padding: 0 30px 36px
         &:after, &:before
           display: none
+      &__description
+        text-align: left
       &__button
         top: 30px
         &--prev
           left: 50%
           transform: translateX(-50%)
-          margin-left: -85px
+          margin-left: -90px
         &--next
           right: 50%
           transform: translateX(50%)
@@ -412,7 +444,7 @@
         flex-wrap: wrap
         grid-row: 2
         grid-column: 1
-        margin-top: 15px
+        margin-top: 12px
         margin-left: 0
     &__additional
       grid-row: 4

@@ -28,11 +28,11 @@ $(document).ready(function () {
     },
   });
 
+  var mapStyle = $(".map"),
+    mapWidth = mapStyle.css("width"),
+    mapHeight = mapStyle.css("height");
   $(".show-map-on-click").click(function () {
-    var map = $(this).attr("data-map"),
-      mapStyle = $(".map"),
-      mapWidth = mapStyle.css("width"),
-      mapHeight = mapStyle.css("height");
+    var map = $(this).attr("data-map");
     $(this).html('<iframe src="' + map + '" width="' + mapWidth + '" height="' + mapHeight + '" frameborder="0" style="border:0" allowfullscreen></iframe>');
   });
 
@@ -64,6 +64,7 @@ $(document).ready(function () {
       closeModal(press);
     }
   });
+
   function openModal() {
     var modalOverlay = $(".modal__overlay");
     var modalDialog = $(".modal__dialog");
@@ -71,7 +72,8 @@ $(document).ready(function () {
     modalOverlay.addClass("modal__overlay--active");
     modalDialog.addClass("modal__dialog--active");
     modalBody.addClass("modal-open")
-  }
+  };
+
   function closeModal(event) {
     event.preventDefault();
     var modalOverlay = $(".modal__overlay");
@@ -80,7 +82,7 @@ $(document).ready(function () {
     modalOverlay.removeClass("modal__overlay--active");
     modalDialog.removeClass("modal__dialog--active");
     modalBody.removeClass("modal-open")
-  }
+  };
 
   $(".form").each(function () {
     $(this).validate({
@@ -101,20 +103,31 @@ $(document).ready(function () {
       }
     });
   });
+
   $('.phone').each(function () {
     $(this).mask("+7 (999) 999-99-99", {
-      'translation': { 9: { pattern: /[0-9*]/ } }
+      'translation': {
+        9: {
+          pattern: /[0-9*]/
+        }
+      }
     });
   });
-  var removeAos = function () { };
-  window.onresize = function (event) {
-    document.location.reload();
-    var mapImage = $(".map__image"),
-      imgWidth = mapImage.css("width"),
-      imgHeight = mapImage.css("heigth");
-    imgWidth.load();
-    imgHeight.load();
+
+  var mapImage = $(".map__image"),
+    imgWidth = mapImage.css("width"),
+    imgHeight = mapImage.css("heigth");
+  var size = function () {
+    imgWidth = mapWidth;
+    imgHeight = mapHeight;
   }
+
+  $(window).resize(function () {
+    document.location.reload();
+    size();
+  });
+
+  var removeAos = function () { };
 
   if (window.innerWidth < 768) {
     removeAos = function () {
@@ -124,5 +137,7 @@ $(document).ready(function () {
     }
     removeAos();
   }
+
   AOS.init();
+
 });

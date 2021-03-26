@@ -24,12 +24,16 @@
     width: 225px
     height: 225px
   .footer
+    &-wrapper
+      grid-template-columns: 1.3fr 0.9fr 1.4fr 1.1fr
     &__input
       &-group
         flex-basis: 100%
     &__link
       &-wrapper
         grid-template-rows: 23px 46px 23px
+    &__legal
+      margin-left: 0
 @media (min-width: 992px)
   .navbar
     &-menu
@@ -103,10 +107,13 @@
       font-size: 30px
       line-height: 38px
       margin-bottom: 50px
+      letter-spacing: 0
     &-slider
       &__item
         max-width: 579px
         padding: 0 62px 30px
+        &::after, &::before
+          display: none
       &__description
         max-height: 135px
   .activities
@@ -334,8 +341,6 @@
       &__item
         max-width: 579px
         padding: 0 30px 36px
-        &:after, &:before
-          display: none
       &__description
         text-align: left
       &__button
@@ -364,6 +369,8 @@
       order: 2
   .footer
     padding-bottom: 21px
+    &__form
+      width: 505px
     &__input
       &-group
         flex-basis: 100%
@@ -371,8 +378,10 @@
     &__dialog
       padding: 33px 55px
       max-height: 517px
-      height: 100%
+      height: 90%
       overflow-y: auto
+    &__form
+      margin-bottom: 33px
 @media (max-width: 576px)
   .logo
     max-width: 99px
@@ -509,6 +518,13 @@
   .hotel
     &-slider
       height: 179px
+      &__button
+        &--next
+          right: 1px
+          background-size: 4px 7px
+        &--prev
+          left: 1px
+          background-size: 4px 7px
   .subscribe
     max-width: 100%
   .activities

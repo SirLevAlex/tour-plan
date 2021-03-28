@@ -122,10 +122,24 @@ $(document).ready(function () {
     imgHeight = mapHeight;
   }
 
-  $(window).resize(function () {
-    document.location.reload();
-    size();
-  });
+  function forForm() {
+    var form = $("input");
+    if (form.clicked == true) {
+      $(window).resize(function () {
+        document.location.reload(false);
+      });
+    } else {
+      $(window).resize(function () {
+        document.location.reload(true);
+        size();
+      });
+    }
+  }
+  forForm();
+  // $(window).resize(function () {
+  //   document.location.reload();
+  //   size();
+  // });
 
   var removeAos = function () { };
 
